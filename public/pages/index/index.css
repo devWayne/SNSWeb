@@ -5,31 +5,32 @@
 a {
   text-decoration: none;
 }
-.nav {
+#header {
+  position: relative;
   width: 960px;
   margin: 0 auto;
 }
-.nav:after {
+#header:after {
   display: block;
   content: '\20';
   height: 0;
   clear: both;
 }
-.nav .nav-link {
+#header .nav-link {
   float: right;
   width: 700px;
   background-color: #ff8400;
   height: 40px;
 }
-.nav .nav-link ul {
+#header .nav-link ul {
   list-style: none;
 }
-.nav .nav-link ul li {
+#header .nav-link ul li {
   height: 40px;
   float: left;
   font-size: 16px;
 }
-.nav .nav-link ul li a {
+#header .nav-link ul li a {
   display: inline-block;
   float: left;
   height: 40px;
@@ -37,10 +38,26 @@ a {
   padding: 0 22px 0 22px;
   color: #fff;
 }
-.nav .nav-link ul li a span {
+#header .nav-link ul li a span {
   color: #fff;
   vertical-align: bottom;
 }
-.nav .nav-link ul .current {
+#header .nav-link ul .current {
   background-color: #e95a00;
+}
+#header .nav-menu {
+  width: 245px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 998;
+}
+#header .nav-menu .nav-title {
+  background-color: #707e8a;
+  line-height: 40px;
+  width: 100%;
+  text-indent: 16px;
+  display: block;
+  color: #fff;
+  font-size: 16px;
 }
