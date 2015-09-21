@@ -5,16 +5,16 @@
 a {
   text-decoration: none;
 }
-#header {
-  position: relative;
-  width: 960px;
-  margin: 0 auto;
-}
-#header:after {
+.Fix:after {
   display: block;
   content: '\20';
   height: 0;
   clear: both;
+}
+#header {
+  position: relative;
+  width: 960px;
+  margin: 0 auto;
 }
 #header .nav-link {
   float: right;
@@ -60,4 +60,53 @@ a {
   display: block;
   color: #fff;
   font-size: 16px;
+}
+#header .nav-menu .nav-dropmenu {
+  display: block;
+  background-color: #f7f7f7;
+  position: relative;
+  z-index: 999;
+}
+#header .nav-menu .nav-dropmenu ul {
+  display: block;
+  border: 1px solid #eaeaea;
+  height: 510px;
+  border-top: 0;
+  border-bottom: 0;
+}
+#header .nav-menu .nav-dropmenu ul li {
+  height: 50px;
+  border-bottom: 1px solid #eaeaea;
+  display: block;
+  float: left;
+}
+#header .nav-menu .nav-dropmenu ul li dl {
+  line-height: 50px;
+  text-align: right;
+  position: relative;
+  padding-right: 25px;
+  white-space: nowrap;
+  cursor: pointer;
+  width: 218px;
+  z-index: 991;
+  display: block;
+  height: 50px;
+  overflow: hidden;
+}
+#header .nav-menu .nav-dropmenu ul li dl dt {
+  float: left;
+  padding-left: 15px;
+  font-size: 16px;
+}
+#header .nav-menu .nav-dropmenu ul li dl dt a {
+  color: #333;
+}
+#header .nav-menu .nav-dropmenu ul li dl dd {
+  display: inline-block;
+  font-size: 12px;
+  padding-left: 11px;
+  line-height: 53px;
+}
+#header .nav-menu .nav-dropmenu ul li dl dd a {
+  color: #666;
 }

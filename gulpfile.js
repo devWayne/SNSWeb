@@ -57,4 +57,5 @@ gulp.task('default', [
   'public'
 ]);
 
+gulp.watch('src/**/*.less', ['less','public']);
 

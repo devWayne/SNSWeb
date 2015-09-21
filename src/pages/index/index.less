@@ -5,17 +5,20 @@
 a{
 	text-decoration: none;
 }
-#header{
 
-    position:relative;
-    width: 960px;
-    margin: 0 auto;
+.Fix{
     &:after{
     display: block;
     content: '\20';
     height: 0;
     clear: both;
     }
+}
+#header{
+    position:relative;
+    width: 960px;
+    margin: 0 auto;
+    
 .nav-link {
     float: right;
     width: 700px;
@@ -53,13 +56,63 @@ a{
     top: 0;
     z-index: 998;
 	.nav-title {
-    background-color: #707e8a;
-    line-height: 40px;
-    width: 100%;
-    text-indent: 16px;
-    display: block;
-    color: #fff;
-    font-size: 16px;
+    		background-color: #707e8a;
+    		line-height: 40px;
+    		width: 100%;
+    		text-indent: 16px;
+    		display: block;
+    		color: #fff;
+    		font-size: 16px;
+	}
+	.nav-dropmenu{
+	display: block;
+    	background-color: #f7f7f7;
+    	position: relative;
+   	z-index: 999;
+		ul {
+    		display: block;
+    		border: 1px solid #eaeaea;
+    		height: 510px;
+    		border-top: 0;
+    		border-bottom: 0;
+		li {
+    			height: 50px;
+    			border-bottom: 1px solid #eaeaea;
+    			display: block;
+    			float: left;
+			 dl {
+    				line-height: 50px;
+    				text-align: right;
+    				position: relative;
+    				padding-right: 25px;
+    				white-space: nowrap;
+    				cursor: pointer;
+    				width: 218px;
+    				z-index: 991;
+    				display: block;
+    				height: 50px;
+    				overflow: hidden;
+				dt {
+    					float: left;
+    					padding-left: 15px;
+    					font-size: 16px;
+					a {
+    					color: #333;
+					}
+
+				}
+				dd {
+   					display: inline-block;
+    					font-size: 12px;
+    					padding-left: 11px;
+    					line-height: 53px;
+					a {
+    					color: #666;
+					}
+				}
+			}
+		}
+		}
 	}
 }
 }
