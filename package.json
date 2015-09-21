@@ -1,5 +1,5 @@
 {
-  "name": "snsweb",
+  "name": "saturnweb",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/devWayne/SNSWeb.git"
+    "url": "git+https://github.com/devWayne/SaturnWeb.git"
   },
   "author": "Jarvan",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/devWayne/SNSWeb/issues"
+    "url": "https://github.com/devWayne/SaturnWeb/issues"
   },
-  "homepage": "https://github.com/devWayne/SNSWeb#readme",
+  "homepage": "https://github.com/devWayne/SaturnWeb#readme",
   "dependencies": {
     "express": "^4.13.3",
     "express-handlebars": "^2.0.1"
