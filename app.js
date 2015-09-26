@@ -19,7 +19,7 @@ app.get('/', function (req, res) {
     var ua = parser(req.headers['user-agent']);
     var isMobile = ua.device.type == "mobile";
     //console.log(isMobile);
-    isMobile?res.render('index-mobile',{layout: 'mobile'}):res.render('index-pc');
+    isMobile?res.render('pages/index-mobile/index',{layout: 'mobile'}):res.render('pages/index-pc/index');
 });
 // Include static assets. Not advised for production
 app.use(express.static(path.join(__dirname, 'public')));

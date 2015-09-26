@@ -59,7 +59,13 @@ gulp.task('babel', function() {
       path.extname = '.js';
     }))
     .pipe(babel())
-    .pipe(gulp.dest('build'));
+    .pipe(gulp.dest('public/'));
+});
+
+gulp.task('handlebars',function(){
+  return gulp.src('src/**/*.handlebars')
+    .pipe(gulp.dest('views/'));
+
 });
 
 gulp.task('public',function(){
@@ -74,8 +80,9 @@ gulp.task('public',function(){
 gulp.task('default', [
   'babel',
   'less',
+  'handlebars',
   'public'
 ]);
 
-gulp.watch('src/**/*.less', ['less','public']);
+gulp.watch('src/**/*.less', ['less']);
 
