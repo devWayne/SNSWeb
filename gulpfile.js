@@ -46,7 +46,7 @@ var processors = [
 
 gulp.task('less', function() {
 	
-    return gulp.src('src/**/*.less')
+    return gulp.src('src/pages/**/*.less')
 	.pipe(less())        
 	//.pipe(postcss(processors))
         .pipe(gulp.dest('public/'));
@@ -62,11 +62,25 @@ gulp.task('babel', function() {
     .pipe(gulp.dest('public/'));
 });
 
-gulp.task('handlebars',function(){
-  return gulp.src('src/**/*.handlebars')
+gulp.task('handlebars-pages',function(){
+  return gulp.src('src/pages/**/*.handlebars')
     .pipe(gulp.dest('views/'));
-
 });
+gulp.task('handlebars-mods',function(){
+  return gulp.src('src/mods/**/*.handlebars')
+    .pipe(gulp.dest('views/partials'));
+});
+gulp.task('handlebars-layouts',function(){
+  return gulp.src('src/base/layouts/**/*.handlebars')
+    .pipe(gulp.dest('views/layouts'));
+});
+
+
+gulp.task('assets',function(){
+  return gulp.src('src/assets/**/*')
+    .pipe(gulp.dest('public/'));
+});
+
 
 gulp.task('public',function(){
   return gulp.src('build/**/*.css')
@@ -80,9 +94,12 @@ gulp.task('public',function(){
 gulp.task('default', [
   'babel',
   'less',
-  'handlebars',
+  'handlebars-pages',
+  'handlebars-mods',
+  'handlebars-layouts',
+  'assets',
   'public'
 ]);
 
-gulp.watch('src/**/*.less', ['less']);
+gulp.watch(['src/**/*.less','src/**/*.handlebars'], ['less','handlebars-pages','handlebars-mods','handlebars-layouts']);
 
