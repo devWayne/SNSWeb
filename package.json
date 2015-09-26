@@ -18,9 +18,10 @@
   "homepage": "https://github.com/devWayne/SaturnWeb#readme",
   "dependencies": {
     "express": "^4.13.3",
-    "express-handlebars": "^2.0.1"
+    "express-handlebars": "^2.0.1",
+    "ua-parser-js": "^0.7.9"
   },
-  "devDependencies":{
+  "devDependencies": {
     "autoprefixer": "^3.1.0",
     "gulp": "*",
     "gulp-clean": "^0.2.4",
