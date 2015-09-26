@@ -7,6 +7,26 @@ var minifyCss    = require('gulp-minify-css');
 var sourcemaps   = require('gulp-sourcemaps');
 var concat	 = require('gulp-concat');
 
+// var gulp = require('gulp');  
+// var less = require('gulp-less');  
+// var csso = require('gulp-csso');  
+// var gutil = require('gulp-util');
+
+// gulp.task('less', function() {  
+//   return gulp.src('less/app.less')
+//       .pipe(less())
+//       .on('error', function(err) {
+//         gutil.log('Less Error!', err.message);
+//         this.end();
+//       })
+//       .pipe(csso())
+//       .pipe(gulp.dest('./dist'))
+// });
+
+// gulp.task('watch', function() {  
+//   gulp.watch('less/**/*.less', ['less']);
+// });
+// 以上用来处理错误，不会挂掉
 var version = [
     "ie >=6",
     "chrome 20",    //taobao3
