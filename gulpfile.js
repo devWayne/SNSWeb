@@ -78,7 +78,7 @@ gulp.task('handlebars-layouts',function(){
 
 gulp.task('assets',function(){
   return gulp.src('src/assets/**/*')
-    .pipe(gulp.dest('public/'));
+    .pipe(gulp.dest('public/assets'));
 });
 
 
