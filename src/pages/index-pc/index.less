@@ -443,30 +443,38 @@ a{
         ul{
           list-style-type: none;
           .pic1{
+            border-top: 1px solid #eaeaea;
+            border-right: 1px solid #eaeaea;
             cursor: pointer;
-            width:170px;
-            height:154px;
+            width:169px;
+            height:153px;
             background-image: url(../assets/img/2.jpg);
             float: left;
           }
           .pic2{
+            border-top: 1px solid #eaeaea;
+            border-right: 1px solid #eaeaea;
             cursor: pointer;
-            width:170px;
-            height:154px;
+            width:169px;
+            height:153px;
             background-image: url(../assets/img/3.png);
             float: left;
           }
           .pic3{
+            border-top: 1px solid #eaeaea;
+            border-right: 1px solid #eaeaea;
             cursor: pointer;
-            width:170px;
-            height:154px;
+            width:169px;
+            height:153px;
             background-image: url(../assets/img/4.png);
             float: left;
           }
           .pic4{
+            border-top: 1px solid #eaeaea;
+            border-right: 1px solid #eaeaea;
             cursor: pointer;
-            width:170px;
-            height:154px;
+            width:169px;
+            height:153px;
             background-image: url(../assets/img/5.png);
             float: left;
           }
@@ -499,6 +507,10 @@ a{
             height: 50px;
           }
           span{
+            &:hover{
+            cursor:pointer;
+            color: blue;
+          }
             float: left;
             display: block;
             width: 110px;
@@ -509,6 +521,7 @@ a{
             float: left;
             font-size: 11px;
             margin-left: 20px;
+            color: #7e7e7e;
           }
         }
         .first-down{
@@ -523,6 +536,10 @@ a{
             height: 50px;
           }
           span{
+            &:hover{
+            cursor:pointer;
+            color: blue;
+          }
             float: left;
             display: block;
             width: 140px;
@@ -533,6 +550,7 @@ a{
             float: left;
             font-size: 11px;
             margin-left: 20px;
+            color: #7e7e7e;
           }
         }
       }
@@ -555,6 +573,10 @@ a{
             height: 50px;
           }
           span{
+            &:hover{
+            cursor:pointer;
+            color: blue;
+          }
             float: left;
             display: block;
             width: 110px;
@@ -565,6 +587,7 @@ a{
             float: left;
             font-size: 11px;
             margin-left: 20px;
+            color: #7e7e7e;
           }
         }
         .second-down{
@@ -579,6 +602,10 @@ a{
             height: 50px;
           }
           span{
+            &:hover{
+            cursor:pointer;
+            color: blue;
+          }
             float: left;
             display: block;
             width: 140px;
@@ -589,31 +616,39 @@ a{
             float: left;
             font-size: 11px;
             margin-left: 20px;
+            color: #7e7e7e;
           }
         }
       } 
       .bottom-help{
-        width: 137px;
+        width: 158px;
         height: 138px;
+        margin-top: 25px;
+        border-right: 1px solid #eaeaea;
         float: left;
-        span{
+        dt{
           font-size: 15px;
           margin-left: 20px;
+          margin-bottom: 10px;
         }
-        a{
-          float: left;
-          
+        dd{
+          font-size: 10px;
+          margin-left: 20px;
+          color: #7D7D7D;
+          &:hover{
+            cursor:pointer;
+            color: blue;
+          }
         }
       }
       .bottom-update{
-        width: 137px;
-        height: 138px;
-        float: left;
+        .bottom-help;
       }
       .bottom-bussiness{
-        width: 137px;
-        height: 138px;
-        float: left;
+        .bottom-help;
       }
+      // .bottom-info{
+      //   .bottom-help;
+      // }
     }
 }
